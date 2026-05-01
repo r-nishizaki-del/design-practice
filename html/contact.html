@@ -1,1 +1,67 @@
-<h1>とてもテスト<h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Rumi Nishizaki Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Rumi Nishizaki</a>
+      <nav aria-label="メインナビゲーション">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" aria-label="Contact">
+      <div class="page-hero-inner">
+        <h1 class="page-title">Contact</h1>
+        <p class="page-subtitle">お気軽にご連絡ください。</p>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-label="お問い合わせフォーム">
+      <div class="contact-inner">
+        <form class="contact-form" action="#" method="post" novalidate>
+
+          <div class="form-group">
+            <label class="form-label" for="name">お名前 <span class="form-required" aria-label="必須">*</span></label>
+            <input class="form-input" type="text" id="name" name="name" required autocomplete="name" placeholder="山田 太郎">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">メールアドレス <span class="form-required" aria-label="必須">*</span></label>
+            <input class="form-input" type="email" id="email" name="email" required autocomplete="email" placeholder="example@email.com">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">メッセージ <span class="form-required" aria-label="必須">*</span></label>
+            <textarea class="form-input form-textarea" id="message" name="message" required rows="6" placeholder="ご用件をご記入ください"></textarea>
+          </div>
+
+          <button class="btn btn-primary btn-submit" type="submit">送信する</button>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-name">Rumi Nishizaki</p>
+      <p class="footer-copy">&copy; 2026 Rumi Nishizaki. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
